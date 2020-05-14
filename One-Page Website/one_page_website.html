@@ -32,13 +32,88 @@
 		<!-- END INTRO -->
 		
 		<!-- CAT PHOTOS -->
-		<h1 id="photos">Adorable cats</h1>
-		<img src="cat_1.jpg" alt="grey and white kitten on its back">
-		<img src="cat_2.jpg" alt="black cat in front of a dark background">
-		<img src="cat_3.jpg" alt="orange and white kitten leaning on a door handle">
-		<img src="cat_4.jpg" alt="grey and white cat laying down and showing its belly">
-		<img src="cat_5.jpg" alt="grey kitten looking sad inside a woven basket">
-		<img src="cat_6.jpg" alt="grey and white cat looking up from a woven basket">
+		<div class="row">
+			<div class="column">
+				<img src="cat_1.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="cat_2.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="cat_3.jpg" onclick="openModal(); currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="cat_4.jpg" onclick="openModal(); currentSlide(4)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="cat_5.jpg" onclick="openModal(); currentSlide(5)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="cat_6.jpg" onclick="openModal(): currentSlide(6)" class="hover-shadow">
+			</div>
+		</div>
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1 / 6</div>
+					<img src="cat_1.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2 / 6</div>
+					<img src="cat_2.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">3 / 6</div>
+					<img src="cat_3.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4 / 6</div>
+					<img src="cat_4.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">5 / 6</div>
+					<img src="cat_5.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">6 / 6</div>
+					<img src="cat_6.jpg" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+					<p id="captioin"></p>
+				</div>
+
+				<div class="column">
+					<img class="demo" src="cat_1.jpg" onclick="currentSlide(1)" alt="kitten stretching">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="cat_2.jpg" onclick="currentSlide(2)" alt="black cat crouching against a dark background">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="cat_3.jpg" onclick="currentSlide(3)" alt="white and orange kitten">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="cat_4.jpg" onclick="currentSlide(4)" alt="kitten laying on its back">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="cat_5.jpg" onclick="currentSlide(5)" alt="gray kitten in a basket">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="cat_6.jpg" onclick="currentSlide(6)" alt="grey and white cat in a basket">
+				</div>
+
+			</div>
+		</div>
 		<!-- END CAT PHOTOS -->
 		
 		<!-- CAT VIDEO -->
@@ -63,5 +138,7 @@
 				The World of Cats &copy; 2020
 		</footer>
 		<!-- END FOOTER -->
+
+	<script src="JS/one_page_website.js"></script>
 	</body>
 </html>
